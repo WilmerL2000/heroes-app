@@ -7,6 +7,7 @@ export const PrivateRoute = ({ children }) => {
 
   const { pathname, search } = useLocation();
 
+  /* Saving the last path the user was on before being redirected to the login page. */
   const lastPath = pathname + search;
   localStorage.setItem("lastPath", lastPath);
 
